@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header> should render proper text 1`] = `
+<div
+  className="Header"
+>
+  <h3>
+    Select zero to N Datasources
+  </h3>
+  <h3>
+    Select zero to N Campaigns
+  </h3>
+  <div>
+    (where zero means "All")
+  </div>
+  <h3>
+    Hitting "Apply", filters the chart to show a timeseries for both Click and Impressions for given Datasources and Campaigns - logical AND
+  </h3>
+</div>
+`;
