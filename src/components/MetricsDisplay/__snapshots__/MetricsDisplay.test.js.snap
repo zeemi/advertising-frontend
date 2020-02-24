@@ -2,7 +2,14 @@
 
 exports[`<MetricsDisplay> should render filters and chart 1`] = `
 <Fragment>
-  <Chart />
-  <Filters />
+  <Filters
+    isFetching={false}
+    setIsFetching={[Function]}
+    setMetrics={[Function]}
+  />
+  <Chart
+    isFetching={false}
+    metrics={Array []}
+  />
 </Fragment>
 `;

@@ -8,5 +8,6 @@ exports[`<App> should render header and metric display 1`] = `
     Adverity Advertising Data ETL-V Challenge
   </h1>
   <Header />
+  <MetricsDisplay />
 </div>
 `;
