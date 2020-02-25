@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Chart> should render chart using given data 1`] = `
+<div
+  className="Chart"
+>
+  <LineChart
+    barCategoryGap="10%"
+    barGap={4}
+    data={Array []}
+    height={500}
+    layout="horizontal"
+    margin={
+      Object {
+        "bottom": 5,
+        "left": 20,
+        "right": 30,
+        "top": 5,
+      }
+    }
+    reverseStackOrder={false}
+    stackOffset="none"
+    width={800}
+  >
+    <XAxis
+      allowDataOverflow={false}
+      allowDecimals={true}
+      allowDuplicatedCategory={true}
+      domain={
+        Array [
+          0,
+          "auto",
+        ]
+      }
+      height={30}
+      hide={false}
+      mirror={false}
+      orientation="bottom"
+      padding={
+        Object {
+          "left": 0,
+          "right": 0,
+        }
+      }
+      reversed={false}
+      scale="auto"
+      tickCount={5}
+      type="category"
+      width={0}
+      xAxisId={0}
+    />
+    <YAxis
+      allowDataOverflow={false}
+      allowDecimals={true}
+      allowDuplicatedCategory={true}
+      domain={
+        Array [
+          0,
+          "auto",
+        ]
+      }
+      height={0}
+      hide={false}
+      label={
+        Object {
+          "angle": -90,
+          "dx": -20,
+          "value": "Clicks",
+        }
+      }
+      mirror={false}
+      orientation="left"
+      padding={
+        Object {
+          "bottom": 0,
+          "top": 0,
+        }
+      }
+      reversed={false}
+      scale="auto"
+      tickCount={5}
+      type="number"
+      width={100}
+      yAxisId="left"
+    />
+    <YAxis
+      allowDataOverflow={false}
+      allowDecimals={true}
+      allowDuplicatedCategory={true}
+      domain={
+        Array [
+          0,
+          "auto",
+        ]
+      }
+      height={0}
+      hide={false}
+      label={
+        Object {
+          "angle": 90,
+          "dx": 60,
+          "margin": 100,
+          "value": "Impressions",
+        }
+      }
+      mirror={false}
+      orientation="right"
+      padding={
+        Object {
+          "bottom": 0,
+          "top": 0,
+        }
+      }
+      reversed={false}
+      scale="auto"
+      tickCount={5}
+      type="number"
+      width={100}
+      yAxisId="right"
+    />
+    <CartesianGrid
+      fill="none"
+      horizontal={true}
+      horizontalFill={Array []}
+      horizontalPoints={Array []}
+      stroke="#ccc"
+      strokeDasharray="3 3"
+      vertical={true}
+      verticalFill={Array []}
+      verticalPoints={Array []}
+    />
+    <Tooltip
+      active={false}
+      allowEscapeViewBox={
+        Object {
+          "x": false,
+          "y": false,
+        }
+      }
+      animationDuration={400}
+      animationEasing="ease"
+      contentStyle={Object {}}
+      coordinate={
+        Object {
+          "x": 0,
+          "y": 0,
+        }
+      }
+      cursor={true}
+      cursorStyle={Object {}}
+      filterNull={true}
+      isAnimationActive={true}
+      itemStyle={Object {}}
+      labelStyle={Object {}}
+      offset={10}
+      separator=" : "
+      useTranslate3d={false}
+      viewBox={
+        Object {
+          "x1": 0,
+          "x2": 0,
+          "y1": 0,
+          "y2": 0,
+        }
+      }
+      wrapperStyle={Object {}}
+    />
+    <Legend
+      align="center"
+      iconSize={14}
+      layout="horizontal"
+      verticalAlign="bottom"
+    />
+    <Line
+      activeDot={true}
+      animateNewValues={true}
+      animationBegin={0}
+      animationDuration={1500}
+      animationEasing="ease"
+      connectNulls={false}
+      dataKey="clicks"
+      dot={false}
+      fill="#fff"
+      hide={false}
+      isAnimationActive={true}
+      legendType="line"
+      onAnimationEnd={[Function]}
+      onAnimationStart={[Function]}
+      points={Array []}
+      stroke="#8884d8"
+      strokeWidth={1}
+      type="monotone"
+      xAxisId={0}
+      yAxisId="left"
+    />
+    <Line
+      activeDot={true}
+      animateNewValues={true}
+      animationBegin={0}
+      animationDuration={1500}
+      animationEasing="ease"
+      connectNulls={false}
+      dataKey="impressions"
+      dot={false}
+      fill="#fff"
+      hide={false}
+      isAnimationActive={true}
+      legendType="line"
+      onAnimationEnd={[Function]}
+      onAnimationStart={[Function]}
+      points={Array []}
+      stroke="#82ca9d"
+      strokeWidth={1}
+      type="monotone"
+      xAxisId={0}
+      yAxisId="right"
+    />
+  </LineChart>
+</div>
+`;
