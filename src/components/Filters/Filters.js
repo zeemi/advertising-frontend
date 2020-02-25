@@ -1,18 +1,23 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import apiClient from "../../helpers/apiClient";
 
 
 const Filters = ({isFetching, setIsFetching, setMetrics}) => {
-  const handleOnClick = async () => {
+  const fetchMetrics = async () => {
     setIsFetching(true);
     const metrics = await apiClient.getMetrics([], []);
     setMetrics(metrics);
     setIsFetching(false);
   };
 
+  useEffect(() => {
+    fetchMetrics()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return <div>
     Filters
-    <button onClick={handleOnClick} disabled={isFetching}>Apply</button>
+    <button onClick={fetchMetrics} disabled={isFetching}>Apply</button>
   </div>
 };
 

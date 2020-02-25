@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filters> should render apply button 1`] = `
+<div>
+  Filters
+  <button
+    onClick={[Function]}
+  >
+    Apply
+  </button>
+</div>
+`;
