@@ -2,7 +2,23 @@
 
 exports[`<Filters> should render apply button 1`] = `
 <div>
-  Filters
+  <h3>
+    Filter dimension values
+  </h3>
+  <h4>
+    Data sources
+  </h4>
+  <Component
+    selectedOptions={Array []}
+    setSelectedOptions={[Function]}
+  />
+  <h4>
+    Campaigns
+  </h4>
+  <Component
+    selectedOptions={Array []}
+    setSelectedOptions={[Function]}
+  />
   <button
     onClick={[Function]}
   >

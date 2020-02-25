@@ -1,10 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import apiClient from "../../helpers/apiClient";
-import Select from "../Select/Select";
-import withDomainData from '../../hocs/withDomainData';
-
-const DataSourcesSelect = withDomainData(Select);
-const CampaignsSelect = withDomainData(Select);
+import CampaignsSelect from "../Select/CampaignsSelect";
+import DataSourcesSelect from "../Select/DataSourcesSelect";
 
 const Filters = ({isFetching, setIsFetching, setMetrics}) => {
   const [selectedDataSource, setSelectedDataSource] = useState([]);
@@ -12,7 +9,7 @@ const Filters = ({isFetching, setIsFetching, setMetrics}) => {
 
   const fetchMetrics = async () => {
     setIsFetching(true);
-    const metrics = await apiClient.getMetrics(selectedCampaigns.map(campaign=>campaign.value), selectedDataSource.map(source => source.value));
+    const metrics = await apiClient.getMetrics(selectedCampaigns.map(campaign => campaign.value), selectedDataSource.map(source => source.value));
     setMetrics(metrics);
     setIsFetching(false);
   };
@@ -23,11 +20,14 @@ const Filters = ({isFetching, setIsFetching, setMetrics}) => {
   }, []);
 
   return <div>
-    Filters
-    <CampaignsSelect setSelectedOptions={setSelectedCampaigns} selectedOptions={selectedCampaigns}/>
+    <h3>Filter dimension values</h3>
+
+    <h4>Data sources</h4>
     <DataSourcesSelect setSelectedOptions={setSelectedDataSource} selectedOptions={selectedDataSource}/>
+    <h4>Campaigns</h4>
+    <CampaignsSelect setSelectedOptions={setSelectedCampaigns} selectedOptions={selectedCampaigns}/>
     <button onClick={fetchMetrics} disabled={isFetching}>Apply</button>
-  </div>
+  </div>;
 };
 
 export default Filters;

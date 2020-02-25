@@ -18,4 +18,12 @@ export default class ApiClient {
 
     return this.get(url)
   }
+
+  static getCampaigns(){
+    return this.get('/campaigns');
+  }
+
+  static getDataSources(){
+    return this.get('/data-sources');
+  }
 };
