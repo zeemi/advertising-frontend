@@ -1,3 +1,23 @@
+# advertising-frontend
+
+## Concept:
+ - Move heavy operation to backend.
+ - Avoid any data manipulation.
+ - Combine filters and fetch already correctly prepared data set.
+
+## Suggested improvements:
+ - raise test coverage
+ - optimize/replace `Select` component which have some performence issues with bigger data set
+ - improve propTypes coverage (all components should be propTyped)
+ - improve UI/UX
+ - handle/display some notification on apiClient failures
+ - improve developer experience by:integrating eslint/prettier, run test on commit etc
+
+
+## Installation
+
+`yarn`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
